@@ -50,6 +50,14 @@ app.get('/about',(req,res)=>{
   });
 });
 
+app.get('/project',(req,res)=>{
+  res.render('project.hbs',{
+    pageTitle : 'Project',
+    welcomeMessage : 'Hello Project'
+  });
+});
+
+
 app.get('/bad',(req,res)=>{
   res.send({
     errorMessage : 'Unable to handle requst'
